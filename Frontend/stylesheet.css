@@ -1,0 +1,338 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+}
+
+body {
+	background-image: url("paper.png")
+}
+
+/*Navigation Bar*/
+nav {
+	margin: 0;
+	background-color: #393939;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+    list-style-type: none;
+    font-family: "Verdana";
+    font-size: 1em;
+}
+
+a {		/*Remove link color and underline*/
+	color: inherit;
+	text-decoration: none;
+}
+
+.navTitle {		/*logo on navbar*/
+	margin-right: 7em;
+	font-size: 1.25em;
+	color:#FFFFFF;
+	font-family: "Coming Soon", serif;
+	line-height: 2em;
+	padding-left: 8em;
+}
+
+.notselected{	/*if navbar option is not selected*/
+	margin-right: 2em;
+	color: #BCBCBC;
+}
+
+/*.selected {		if navbar option is selected
+	margin-right: 2em;
+	color: white;
+	border-bottom: .3em solid white;
+	padding: 0em 1em .5em 1em;
+}*/
+
+.selected {		/*if navbar option is selected*/
+	margin-right: 2em;
+	color: #FFFFFF;
+}
+
+#searchbutton {
+	height: 2.4em;
+	width: 2.7em;
+	border: 0;
+	background: white;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+	position: absolute;
+}
+
+#searchicon {
+	padding-right: 1em;
+	color: transparent;
+}
+
+.typehead {
+	height: 2.2em;
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: .2em;
+	border:none;
+	outline: none;
+}
+
+.container {
+	position: absolute;
+	top: .4em;
+	left: 60em;
+	/*
+	left:90em;
+	top:.64em;*/
+}
+
+.typeahead {
+	height: 2.2em;
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: .2em;
+	border:none;
+	outline: none;
+}
+
+
+.tt-input { /* UPDATE: newer versions use tt-input instead of tt-query */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+
+.tt-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+    width: 10em;
+    margin-top: .5em;
+    margin-left: .4em;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
+}
+
+
+.tt-suggestion.tt-cursor{ /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
+    color: #fff;
+    background-color: #0097cf;
+}
+
+.tt-suggestion.tt-cursor:hover{ /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
+    color: #fff;
+    background-color: #0097cf;
+}
+
+.accountname {
+	color: #FFFFFF;
+	margin-left: 5em;
+	float:right;
+	margin-top: .55em;
+	margin-right: 11em;
+}
+
+.create {	/* button to create writing*/
+	position: absolute;
+	left: 81em;
+	top: .45em;
+}
+
+#logout {
+	color:#FFFFFF;
+	position: absolute;
+	left:86em;
+	top:.64em;
+}
+
+
+
+/*User Posts*/
+.post {		/*contains user post title, time, and author*/
+    display: table;
+    margin: 2em 10em 0 10em;
+    width: 50%;
+    font-family: "Verdana";
+}
+
+.row {
+    display: table-row;
+}
+
+.title {
+	display: table-cell;
+	font-size: 1.1em;
+	text-align:left;
+}
+
+.cellLeft {
+	display: table-cell;
+	text-align: left;
+	font-size: .7em;
+	padding-top: .5em;
+}
+
+.timestamp {
+	display: table-cell;
+	text-align: right;
+	font-size: .7em;
+	vertical-align: top;
+}
+
+.postExtras {
+    display: table;
+    margin: .3em 10em 0 10em;
+    width: 50%;
+    font-family: "Verdana";
+}
+
+#comments {
+	display: table-cell;
+	vertical-align: middle;
+	width:25%;
+	font-size: .75em;
+}
+
+#favoritesicon {
+	vertical-align: top;
+}
+
+#favorites {
+	display: table-cell;
+	vertical-align: bottom;
+	font-size: .75em;
+}
+
+
+
+
+.thematicBreak {
+	width: 200%;
+	margin-top: 1em;
+}
+
+
+
+/*Story Page*/
+.paragraph {	/*Contains story title, text and stats*/
+	padding-top: 1em;
+	padding-left: 10em;
+	padding-right: 10em;
+}
+
+.storyTitle {	/*story title*/
+	font-size: 1.25em;
+}
+
+.author {
+	font-size: .8em;
+	margin-bottom: 1em;
+}
+
+.story {	/*story text*/
+	border: 1px solid;
+	border-color: #393939;
+	border-radius: 1.5em;
+	padding: 1em 1.7em 1em 1.7em;
+	margin-top: 1em; 
+	margin-left: 10em;
+	margin-right: 3em;
+	width: 53%;
+	display: inline-block;
+}
+.stats {	/*story stats*/
+	list-style-type: none;
+	width: 5%%;
+	padding:0;
+	padding-right: -3em;
+	vertical-align: top;
+	margin-top: 2em;
+	display: inline-block;
+	font-family: "Verdana";
+	font-size: .85em;
+}
+
+.description {
+	color: #BCBCBC;
+}
+
+.space {
+	margin-bottom: .5em;
+}
+
+
+/*Comments Section*/
+
+.comment {
+	padding-top: 1em;
+	padding-left: 10em;
+	padding-right: 10em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+
+.comments {
+	font-size: 1.25em;
+}
+
+#commentbox {
+	margin-top: 2em;
+	width: 40em;
+	resize: none;
+}
+
+#submitbutton {
+	padding: .7em .7em .7em .7em;
+	margin-top: 1em;
+	background-color: white;
+	border-color: black;
+	border-radius: 0;
+}
+
+#commentsection {
+	margin-left: 10em;
+	list-style-type: none;
+	margin-bottom: 5em;
+	width: 53%
+}
+
+.commentstamp {
+	font-size: .8em;
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+
+.commentcontent {
+	word-wrap: break-word;
+	margin-bottom: 1em;
+}
+
+/*Hover Effect*/
+.hover {
+	color: black;
+	background-color: white;
+	padding: .6em 1em .8em 1em;
+}
+
+#footer {
+    text-align: center ;
+    font-size: 16px ;
+    font-family: verdana ;
+    width: auto;
+    height: 10em;
+    background-color: #393939;
+}
+
+
+
+
+
+

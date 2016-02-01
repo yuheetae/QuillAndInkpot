@@ -1,0 +1,31 @@
+body {
+	text-align: center;
+	font-family: "Coming Soon", serif;
+	background-image: url("paper.png")
+}
+
+#logo {
+	font-size: 9em;
+	margin-top: .7em;
+	margin-bottom: -.2em;
+}
+
+#login {
+	padding: .7em .7em .7em .7em;
+	background-color: white;
+	border-color: black;
+	border-radius: 0;
+}
+
+#createaccount {
+	margin-top: 2em;
+	padding: 1em 1em 1em 1em;
+	background-color: white;
+	border-color: black;
+	border-radius: 0;
+}
+
+.authentication {
+	padding: .5em .5em .5em .5em;
+}
+

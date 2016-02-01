@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("paper.png")
+}
+
+/*Navigation Bar*/
+nav {
+	margin: 0;
+	background-color: #393939;
+	overflow: hidden;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+    list-style-type: none;
+    font-family: "Verdana";
+    font-size: 1em;
+}
+
+a {		/*Remove link color and underline*/
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	font-family: "Verdana";
+	font-size: 1.1em;
+	color: #3D3934;
+}
+
+.navTitle {		/*logo on navbar*/
+	margin-right: 7em;
+	font-size: 1.25em;
+	color:#FFFFFF;
+	font-family: "Coming Soon", serif;
+	line-height: 2em;
+	padding-left: 8em;
+}
+
+.accountname {
+	color: #FFFFFF;
+	margin-left: 5em;
+	float:right;
+	margin-top: .55em;
+	margin-right: 11em;
+}
+
+#logout {
+	color:#FFFFFF;
+	position: absolute;
+	left:86em;
+	top:.64em;
+}
+
+div {
+	margin-left: 10em;
+}
+
+#title {
+	border: none;
+	border-bottom: 1px solid #5E574F;
+	margin-top: -1.5em;
+	padding: .4em 1em .4em 1em;
+	width: 30%;
+	font-family: "Coming Soon";
+	font-size: 1em;
+	outline: none;
+	background-image: url("paper.png")
+}
+
+#submit {
+	margin-left: 17em;
+	margin-top: 2em;
+	margin-bottom: 20em;
+	padding: 1em 1em 1em 1em;
+	background-color: white;
+	border-color: black;
+	border-radius: 0;
+	background-image: url("paper.png");
+}
+
+
+
+textarea { 
+	resize: none;
+	outline: none;
+	width: 70%;
+	min-height: .5em;
+	font-family: "Coming Soon";
+	font-size: 1em;
+	border: 1px solid #5E574F;
+	padding: 1em 1.3em 0 1.3em;
+	background-image: url("paper.png");
+}
+
